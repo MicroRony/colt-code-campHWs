@@ -1,0 +1,41 @@
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  padding: 0 15px;
+  margin: 3px;
+  border-right: 2px solid #333;
+}
+
+ul li:last-of-type a {
+  border-right: 0;
+}
+
+#gallery img{
+  padding: 5px;
+  border-right: 5px solid red;
+  background: yellow;
+  margin: 5px 10px;
+  width: 300px;
+  height: 200px;
+}
+
+#register-form {
+  margin-top: 20px;
+  width: 400px;
+  border-top: 5px solid #333;
+}
+
+#register-form input {
+  width: 400px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+#register-form button {
+  width: 400px;
+  height: 30px;
+  background: steelblue;
+  color: white;
+}
