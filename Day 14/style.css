@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap');
+
+body {
+  margin:  0;
+  font-family: Montserrat;
+}
+
+button {
+    display: inline-block;
+    line-height: 40px;
+    padding: 0.3em 0.5em;
+    -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    background: #fff;
+    border:none;
+    border-radius: 0.5em;
+    font-size: 1.5em;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: .025em;
+    color: #7795f8;
+    outline: none;
+}
+
+header {
+  background: url('img/Flower.jpeg') bottom/cover;
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 50px;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+main {
+  background-color: #f6f9fc;
+  display: grid;
+  justify-items: center;
+}
+
+#cards {
+  background-color: white;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
+}
+
+#cards section:nth-of-type(2) {
+  border-left: 1px solid #f6f9fc;
+}
+
+#cards img {
+  width: 66px;
+}
+
+#cards h3 {
+  color: #24b47e;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+#cards p {
+  line-height: 1.8;
+  color: #525f7f;
+}
+
+#cards a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #6772e5;
+}
+
+main h2 {
+  color: #6772e5;
+}
+
+#cards section {
+  padding: 4em;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 50vh;
+  }
+  #cards {
+    grid-template-columns: 1fr;
+  }
+
+  #cards section:nth-of-type(2) {
+    border-left: 0;
+    border-top: 3px solid #f6f9fc;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    font-size: 0.8em;
+    height: 50vh;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    font-size: 0.5em;
+  }
+
+  main h2 {
+    font-size: 1.2rem;
+  }
+
+  #cards {
+    font-size: 0.6em;
+  }
+}
